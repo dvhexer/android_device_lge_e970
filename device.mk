@@ -104,6 +104,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/gps.conf:system/etc/gps.conf
 
+# vold configuration
+PRODUCT_COPY_FILES += \
+        device/lge/mako/vold.fstab:system/etc/vold.fstab
+
 # NFC packages
 PRODUCT_PACKAGES += \
     libnfc \
@@ -244,6 +248,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
+
+# override voice tx device when on headphones with no mic(needed for JB radio)
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.ril.tx_headphone_override=Handset
 
 # for bugmailer
 PRODUCT_PACKAGES += send_bug
