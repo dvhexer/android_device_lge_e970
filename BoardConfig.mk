@@ -44,6 +44,8 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 TARGET_KERNEL_SOURCE := kernel/lge/gproj
 TARGET_KERNEL_CONFIG := cyanogenmod_e970_defconfig
 
+TARGET_OTA_ASSERT_DEVICE := geeb,gee_a,e970,gee,geebus
+
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_FLUENCE_INCALL := true
 BOARD_USES_SEPERATED_AUDIO_INPUT := true
