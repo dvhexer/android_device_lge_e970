@@ -181,7 +181,6 @@
         <item>"mobile_fota,10,0,2,60000,true"</item>
         <item>"mobile_ims,11,0,2,60000,true"</item>
         <item>"mobile_cbs,12,0,2,60000,true"</item>
-        <item>"wifi_p2p,13,1,0,-1,true"</item>
         <item>"bluetooth,7,7,2,-1,true"</item>
     </string-array>
 
@@ -255,4 +254,5 @@
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
 
+    <integer name="config_deviceHardwareKeys">7</integer>
 </resources>
